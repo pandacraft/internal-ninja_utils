@@ -1,16 +1,19 @@
 // ==UserScript==
+
 // @name    	Pandacraft - Environment Banner
 // @namespace	Pandacraft
-// @version		1.1
-// @description	Add a banner with Environment name
+// @version		1.2
+// @description	Add a banner with Environment name to avoid mistakes between preprod & prod
 // @author		Thomas SERES
 // @grant		none
+
 // HTTP DOMAINS
 // @include		http://127.0.0.1/*
 // @include		http://localhost/*
 // @include		http://*.pandacraft.local/*
 // @include		http://*.pandacraft.fr/*
 // @include		http://*.pandacraft.com/*
+
 // HTTPS DOMAINS
 // @include		https://127.0.0.1/*
 // @include		https://localhost/*
@@ -19,6 +22,7 @@
 // @include		https://*.pandacraft.com/*
 // @downloadURL https://raw.githubusercontent.com/pandacraft/ninja/master/js/user-script/env/banner.js
 // @updateURL 	https://raw.githubusercontent.com/pandacraft/ninja/master/js/user-script/env/banner.js
+
 // ==/UserScript==
 
 (function() {
@@ -52,9 +56,6 @@
 
 	envNotifEl.onclick = function() {
 
-		console.log(this.style.top);
-		console.log(this.style.bottom);
-
 		if (this.style.top == "0px") {
 
 			this.style.top = "auto";
@@ -68,7 +69,7 @@
 
 	};
 
-	// Inset Env Banner
+	// Insert Env Banner
 	document.body.insertBefore(envNotifEl, document.body.firstChild);
 
 })();
