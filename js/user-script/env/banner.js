@@ -17,8 +17,8 @@
 // @include		https://*.pandacraft.local/*
 // @include		https://*.pandacraft.fr/*
 // @include		https://*.pandacraft.com/*
-// @downloadURL https://s3-eu-west-1.amazonaws.com/pandacraft-ninja/js/user-script/env/banner.js
-// @updateURL https://s3-eu-west-1.amazonaws.com/pandacraft-ninja/js/user-script/env/banner.js
+// @downloadURL https://raw.githubusercontent.com/pandacraft/ninja/master/js/user-script/env/banner.js
+// @updateURL 	https://raw.githubusercontent.com/pandacraft/ninja/master/js/user-script/env/banner.js
 // ==/UserScript==
 
 (function() {
