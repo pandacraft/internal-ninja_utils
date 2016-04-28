@@ -2,7 +2,7 @@
 
 // @name    	Pandacraft - Environment Banner
 // @namespace	Pandacraft
-// @version		1.2
+// @version		1.3
 // @description	Add a banner with Environment name to avoid mistakes between preprod & prod
 // @author		Thomas SERES
 // @grant		none
@@ -44,7 +44,7 @@
 	}
 
 	// IS LOCAL ?
-	if (hostname == "pandacraft.local" || hostname == "127.0.0.1" || hostname == "localhost") {
+	if (hostname.indexOf("pandacraft.local") != -1  || hostname == "127.0.0.1" || hostname == "localhost") {
 		envText = "LOCAL";
 		envColor = "#4DB6DC";
 	}
