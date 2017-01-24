@@ -2,7 +2,7 @@
 
 // @name    	Pandacraft - Environment Banner
 // @namespace	Pandacraft
-// @version		1.3
+// @version		1.4
 // @description	Add a banner with Environment name to avoid mistakes between preprod & prod
 // @author		Thomas SERES
 // @grant		none
@@ -29,7 +29,7 @@
 	'use strict';
 
 	// Default conf
-	var envNotifDefaultStyle = "position: fixed; z-index: 999; top: 0; left: 0; right: 0; padding: 5px; color: #FAFAFA; text-align: center; font-weight: bold; font-size: 15px; cursor: pointer;";
+	var envNotifDefaultStyle = "position: fixed; z-index: 999; bottom: 0; left: 0; right: 0; padding: 10px; color: #FAFAFA; text-align: center; font-weight: bold; font-size: 15px; cursor: pointer;";
 
 	var envText = "PROD";
 	var envColor = "#DD393B";
