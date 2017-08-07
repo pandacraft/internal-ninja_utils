@@ -2,7 +2,7 @@
 
 // @name    	Pandacraft - Environment Banner
 // @namespace	Pandacraft
-// @version		1.4
+// @version		1.5
 // @description	Add a banner with Environment name to avoid mistakes between staging & production
 // @author		Thomas SERES
 // @grant		none
@@ -10,18 +10,12 @@
 // HTTP DOMAINS
 // @include		http://127.0.0.1/*
 // @include		http://localhost/*
-// @include		http://*.pandacraft.local/*
-// @include		http://*.pandacraft.ninja/*
-// @include		http://*.pandacraft.fr/*
-// @include		http://*.pandacraft.com/*
+// @include		http://*.pandacraft.*
 
 // HTTPS DOMAINS
 // @include		https://127.0.0.1/*
 // @include		https://localhost/*
-// @include		https://*.pandacraft.local/*
-// @include		https://*.pandacraft.ninja/*
-// @include		https://*.pandacraft.fr/*
-// @include		https://*.pandacraft.com/*
+// @include		https://*.pandacraft.*
 // @downloadURL https://raw.githubusercontent.com/pandacraft/ninja/master/js/user-script/env/banner.js
 // @updateURL 	https://raw.githubusercontent.com/pandacraft/ninja/master/js/user-script/env/banner.js
 
@@ -71,11 +65,11 @@
 
 	};
 
-    // Avoid insertion in iframes
-    if (window.location.pathname.indexOf("be2bill") === -1) {
+	// Avoid insertion in iframes
+	if (window.location.pathname.indexOf("be2bill") === -1) {
 
-        // Insert Env Banner
-        document.body.insertBefore(envNotifEl, document.body.firstChild);
-    }
+		// Insert Env Banner
+		document.body.insertBefore(envNotifEl, document.body.firstChild);
+	}
 
 })();
