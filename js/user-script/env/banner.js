@@ -2,7 +2,7 @@
 
 // @name    	Pandacraft - Environment Banner
 // @namespace	Pandacraft
-// @version		1.5
+// @version		1.6
 // @description	Add a banner with Environment name to avoid mistakes between staging & production
 // @author		Thomas SERES
 // @grant		none
@@ -66,7 +66,7 @@
 	};
 
 	// Avoid insertion in iframes
-	if (window.location.pathname.indexOf("be2bill") === -1) {
+	if (window.location.pathname.indexOf("be2bill") === -1 && window.location.href.indexOf("youtube") === -1) {
 
 		// Insert Env Banner
 		document.body.insertBefore(envNotifEl, document.body.firstChild);
