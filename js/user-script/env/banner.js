@@ -2,7 +2,7 @@
 
 // @name    	Pandacraft - Environment Banner
 // @namespace	Pandacraft
-// @version		1.6
+// @version		1.7
 // @description	Add a banner with Environment name to avoid mistakes between staging & production
 // @author		Thomas SERES
 // @grant		none
@@ -49,6 +49,8 @@
 	var envNotifEl = document.createElement("div");
 	envNotifEl.style = envNotifDefaultStyle + "background-color: " + envColor + ";";
 	envNotifEl.innerHTML = envText;
+	var lineNotifEl = document.createElement("div");
+	lineNotifEl.style = "background-color: " + envColor + "; height: 3px; position: fixed; top: 0; left 0; z-index: 9999; width: 100%;";
 
 	envNotifEl.onclick = function() {
 
@@ -70,6 +72,7 @@
 
 		// Insert Env Banner
 		document.body.insertBefore(envNotifEl, document.body.firstChild);
+		document.body.insertBefore(lineNotifEl, document.body.firstChild);
 	}
 
 })();
