@@ -21,7 +21,7 @@
 
 // ==/UserScript==
 
-(function () {
+(function() {
 	'use strict';
 
 	// Default conf
@@ -58,7 +58,7 @@
 	var lineNotifEl = document.createElement("div");
 	lineNotifEl.style = "background-color: " + envColor + "; height: 3px; position: fixed; top: 0; left 0; z-index: 9999; width: 100%;";
 
-	envNotifEl.onclick = function () {
+	envNotifEl.onclick = function() {
 
 		if (this.style.top == "0px") {
 
